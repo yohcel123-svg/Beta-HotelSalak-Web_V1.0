@@ -67,20 +67,7 @@
             opacity: 0;
             pointer-events: none;
         }
-        /* Navbar jadi lebih tipis begitu halaman discroll (baru) */
-        
-        .navbar.navbar-slim {
-            --navbar-h: calc(var(--logo-h) * 0.72 + 24px);
-        }
-        
-        .navbar.navbar-slim .brand-logo {
-            height: calc(var(--logo-h) * 0.72);
-        }
-        
-        .navbar.navbar-slim .nav-link {
-            padding-top: calc(var(--logo-h) * 0.72 * 0.42);
-            padding-bottom: calc(var(--logo-h) * 0.72 * 0.42);
-        }
+
         
         .navbar-brand {
             display: flex;
@@ -88,14 +75,13 @@
             height: 100%;
         }
         
-        .brand-logo {
-            display: block;
-            height: var(--logo-h);
-            width: auto;
-            object-fit: contain;
-            margin: auto 0;
-            /* dipastikan logo center secara vertikal, tidak nempel/ngelewatin garis bawah navbar */
-        }
+.brand-logo {
+    display: block;
+    height: calc(var(--logo-h) * 0.72);
+    width: auto;
+    object-fit: contain;
+    margin: auto 0;
+}
         
         .nav-menu {
             display: flex;
